@@ -12,4 +12,5 @@ export const Container = styled.View`
 export const Title = styled.Text`
     color: ${({theme}) => theme.colors.text};
     font-size: ${RFValue(32)}px;
+    font-family: ${({theme}) => theme.fonts.primary_bold};
 `;

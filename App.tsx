@@ -1,6 +1,9 @@
 import React from 'react';
 
+import AppLoading from 'expo-app-loading';
+
 import {
+  useFonts,
   Poppins_500Medium,
   Poppins_600SemiBold,
   Poppins_700Bold
@@ -23,6 +26,22 @@ import theme from './src/global/styles/theme';
 import { Home } from './src/screens';
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Poppins_500Medium,
+    Poppins_600SemiBold,
+    Poppins_700Bold,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_700Bold,
+    Inter_800ExtraBold,
+    OpenSans_400Regular,
+    OpenSans_600SemiBold
+  });
+
+  if(!fontsLoaded){
+    return <AppLoading />
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Home />
