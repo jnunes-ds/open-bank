@@ -1,0 +1,12 @@
+{
+  "name": "open-bank",
+  "displayName": "open-bank",
+  "expo": {
+    "name": "open-bank",
+    "slug": "open-bank",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
