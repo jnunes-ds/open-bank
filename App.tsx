@@ -1,19 +1,31 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import {
+  Poppins_500Medium,
+  Poppins_600SemiBold,
+  Poppins_700Bold
+} from '@expo-google-fonts/poppins';
+import {
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_700Bold,
+  Inter_800ExtraBold
+} from '@expo-google-fonts/inter';
+import {
+  OpenSans_400Regular,
+  OpenSans_600SemiBold
+} from '@expo-google-fonts/open-sans';
+
+import {ThemeProvider} from 'styled-components';
+
+import theme from './src/global/styles/theme';
+
+import { Home } from './src/screens';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
