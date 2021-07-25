@@ -6,7 +6,7 @@ import {
     Title
 } from './styles';
 
-export function Home(){
+export function Home(): JSX.Element{
 
     return (
         <Container>

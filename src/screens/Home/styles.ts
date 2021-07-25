@@ -6,11 +6,11 @@ export const Container = styled.View`
     justify-content: center;
     align-items: center;
 
-    background-color: ${({theme}) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const Title = styled.Text`
-    color: ${({theme}) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
     font-size: ${RFValue(32)}px;
-    font-family: ${({theme}) => theme.fonts.primary_bold};
+    font-family: ${({ theme }) => theme.fonts.primary_bold};
 `;
